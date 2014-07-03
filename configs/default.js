@@ -190,7 +190,7 @@ var config = [
         listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host.",
 	// Define specified node version for node-runner plugin
 	nodeVersions: {
-	  0.11: "/data/node/nvm/v0.11.13"
+	  0.11: "/data/node/nvm/v0.11.13/bin/node"
 	}
     },
     {
