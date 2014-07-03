@@ -99,6 +99,8 @@
                             <data>
                                 <element caption="Default" value="default" />
                                 <element caption="Node.js (Auto)" value="node auto" />
+				<!--add additional runner with node version 0.11 /-->
+				<element caption="Node.js 0.11.x (Unstable)" value="node 0.11" />
                                 <element caption="Node.js 0.10.x" value="node 0.10" />
                                 <element caption="Node.js 0.8.x" value="node 0.8" />
                                 <element caption="Node.js 0.6.x" value="node 0.6" />

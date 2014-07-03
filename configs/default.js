@@ -187,7 +187,11 @@ var config = [
     "./cloud9.run.shell",
     {
         packagePath: "./cloud9.run.node",
-        listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host."
+        listenHint: "Important: in your scripts, use 'process.env.PORT' as port and '0.0.0.0' as host.",
+	// Define specified node version for node-runner plugin
+	nodeVersions: {
+	  0.11: "/data/node/nvm/v0.11.13"
+	}
     },
     {
         packagePath: "./cloud9.run.node-debug",
@@ -204,7 +208,8 @@ var config = [
     "./cloud9.ide.auth",
     "./cloud9.ide.git",
     "./cloud9.ide.gittools",
-    "./cloud9.ide.hg",
+    // comment out `hg` plugin because of the node version higher than `0.8`
+    //"./cloud9.ide.hg",
     "./cloud9.ide.npm",
     "./cloud9.ide.filelist",
     "./cloud9.ide.search",
