@@ -23,6 +23,7 @@ var projectDir = (argv.w && path.resolve(process.cwd(), argv.w)) || process.cwd(
 var fsUrl = "/workspace";
 var vfsUrl = "/vfs";
 
+console.log(argv);
 var port = argv.p || process.env.PORT || 3131;
 var host = argv.l || process.env.IP || "localhost";
 var debugPort = argv.b || process.env.DEBUG_PORT || 5858;
