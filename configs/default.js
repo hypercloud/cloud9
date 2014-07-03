@@ -23,11 +23,9 @@ var projectDir = (argv.w && path.resolve(process.cwd(), argv.w)) || process.cwd(
 var fsUrl = "/workspace";
 var vfsUrl = "/vfs";
 
-console.log(argv);
 var port = argv.p || process.env.PORT || 3131;
 var host = argv.l || process.env.IP || "localhost";
 var debugPort = argv.b || process.env.DEBUG_PORT || 5858;
-var workspaceId = argv.n || "Cloud9";
 
 var useAuth = argv.username && argv.password;
 
@@ -59,7 +57,7 @@ var config = [
     {
         packagePath: "./cloud9.sandbox",
         projectDir: projectDir,
-        workspaceId: workspaceId,
+        workspaceId: "Cloud9",
         userDir: null, // is this always there??
         unixId: null,
         host: host
